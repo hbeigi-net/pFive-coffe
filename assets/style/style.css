@@ -27,6 +27,12 @@ body{
     height: 100%;
     
 }
+.link-custom-1{
+    color: antiquewhite;
+}
+.link-custom-1:hover{
+    color: rgb(255, 212, 155);
+}
 #cf_header{
     position: relative;
     height: 100vh;
