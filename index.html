@@ -11,7 +11,8 @@
         integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous"> -->
         <!-- <link rel="stylesheet" href="./refs/bootstrap-5.1.1-dist/css/bootstrap.min.css"> -->
     <link rel="stylesheet" href="./refs/bootstrap-5.1.1-dist/css/bootstrap.rtl.min.css">
-    <link rel="stylesheet" href="./refs/font-awesome/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="./refs/font-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
     <link rel="stylesheet" href="assets/style/responsive.css">
     <title>کافی شاپ </title>
@@ -20,19 +21,41 @@
 <body>
    
     <header id="cf_header" >
-        <div class="fixed-top bg-dark  bg-opacity-50">
-            <nav class="container d-flex justify-content-between ">
-                <div class="barnd order-last">
-                    <img src="./assets/img/coffee-g01de0790c_640.png"  alt="">
+        <div class="fixed-top">
+            <nav class="container-md d-flex justify-content-between align-items-center py-2 shadow px-4 px-md-0 ">
+                <div id="small_screen_navbar_toggler" class="d-md-none fs-1">
+                    <i class="fa fa-navicon" aria-hidden="true"></i>
                 </div>
-                <div id="navbar">
-                    <ul class="list-unstyled d-flex my-3 ">
-                        <li class="mx-3"><a href="" class="text-decoration-none link-custom-1 "> خانه </a></li>
+                <div class="brand order-last">
+                    <a href=""><img src="./assets/img/coffee-g01de0790c_640.png"  alt=""></a>
+                </div>
+                <div id="navbar" class="d-none d-md-block">
+                    <ul class="list-unstyled d-flex m-0 ">
+                        <li class="mx-3"><a href="" class="text-decoration-none link-custom-1"> خانه </a></li>
                         <li class="mx-3"><a href="" class="text-decoration-none link-custom-1"> انواع قهوه </a></li>
                         <li class="mx-3"><a href="" class="text-decoration-none link-custom-1"> انواع کیک</a></li>
                         <li class="mx-3"><a href="" class="text-decoration-none link-custom-1"> انواع نوشیدنی </a></li>
                         <li class="mx-3"><a href="" class="text-decoration-none link-custom-1"> درباره ما </a></li>
                     </ul>
+                </div>
+                <div id="small_screen_navbar" class="d-md-none text-center ">
+                    <h1 class="fs-2 p-2  mb-5 shadow-sm ">نام کافی شاپ  </h1>
+                    <ul class="list-unstyled d-flex flex-column mb-5">
+                        <li class="mx-3 my-2 "><a href="" class="text-decoration-none link-custom-2"> خانه </a></li>
+                        <li class="mx-3 my-2 "><a href="" class="text-decoration-none link-custom-2"> انواع قهوه </a></li>
+                        <li class="mx-3 my-2 "><a href="" class="text-decoration-none link-custom-2"> انواع کیک</a></li>
+                        <li class="mx-3 my-2 "><a href="" class="text-decoration-none link-custom-2"> انواع نوشیدنی </a></li>
+                        <li class="mx-3 my-2 "><a href="" class="text-decoration-none link-custom-2"> درباره ما </a></li>
+                    </ul>
+                    <div id="navbar_footer" class="">
+                        <img src="./assets/img/coffee-g01de0790c_640.png"  alt="" class="mb-5">
+                        <ul class="list-unstyled d-flex justify-content-center fs-4">
+                            <li class="mx-3"><a href="" class="text-decoration-none link-custom-2"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li class="mx-3"><a href="" class="text-decoration-none link-custom-2"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                            <li class="mx-3"><a href="" class="text-decoration-none link-custom-2"><i class="fa fa-telegram" aria-hidden="true"></i></a></li>
+                            <li class="mx-3"><a href="" class="text-decoration-none link-custom-2"><i class="fa fa-youtube" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </div>
                 </div>
             </nav>
         </div>
@@ -45,9 +68,10 @@
         </p>
     </header>
 
-
+    <script src="./refs/jquery/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

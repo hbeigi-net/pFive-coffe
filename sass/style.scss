@@ -4,9 +4,7 @@
 }
 
 body{
-    font-family: mikhak;
-    
-   
+    font-family: mikhak; 
 }
 .z-index-10{
     z-index: 10;
@@ -16,6 +14,9 @@ body{
 }
 .z-index-under{
     z-index: -1;
+}
+#cf_header .fixed-top{
+    background-color: rgba(73, 45, 19, 0.459);
 }
 .darker-overlay{
     content: "";
@@ -33,6 +34,16 @@ body{
 .link-custom-1:hover{
     color: rgb(255, 212, 155);
 }
+.link-custom-2{
+    color: rgba(19, 18, 18, 0.699);
+}
+.link-custom-2:hover{
+    color: rgba(0, 0, 0, 0.808);
+}
+.brand img{
+    width: 80px;
+}
+
 #cf_header{
     position: relative;
     height: 100vh;
@@ -45,5 +56,25 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#small_screen_navbar{
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    top: 0;
+    bottom : 0;
+    left: -250px;
+    background-color: antiquewhite;
+    transition: all 800ms cubic-bezier(0.23, 1, 0.320, 1);
+    #navbar_footer{
+     
+        img{
+            width: 150px;
+        }
+    }
+}
+.show-custom{
+    left: 0 !important;
+    
 }
 
