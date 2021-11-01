@@ -3,3 +3,6 @@
     color:$color;
     text-align: $align;
 }
+@mixin margin($y,$x) {
+    margin : $y $x ;
+}
