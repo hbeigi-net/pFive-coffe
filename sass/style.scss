@@ -1,90 +1,47 @@
 @import "mixin";
-
 @font-face {
     font-family: mikhak;
     src: url(../../refs/mikhak/Mikhak-VF-FD[wght\,KSHD\,DSTY].woff2) format("woff2");
 }
-
 body {
     font-family: mikhak;
+    overflow-x: hidden;
 }
-
 .z-index-10 {
     z-index: 10 !important;
 }
-
 .z-index-100 {
     z-index: 100 !important;
 }
-
 .z-index-under {
     z-index: -1 !important;
 }
-
-#cf_header .fixed-top {
-    background-color: rgba(73, 45, 19, 0.459);
-}
-
-.darker-overlay {
-    content: "";
-    background-color: rgba(0, 0, 0, 0.596);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-}
-
 .link-custom-1 {
     color: antiquewhite;
 }
-
 .link-custom-1:hover {
     color: rgb(255, 212, 155);
 }
-
 .link-custom-2 {
     color: rgba(19, 18, 18, 0.699);
 }
-
 .link-custom-2:hover {
     color: rgba(0, 0, 0, 0.808);
 }
-
-.brand img {
-    width: 80px;
-}
-
 .show-custom {
     left: 0 !important;
-
 }
-.text-justifyed{
+.text-justifyed {
     text-align: justify !important;
-    
-}
-.btn-custom-1{
 
-    border-bottom: 3px solid rgba(160, 81, 45, 0.692) ;
-    .overlay{
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        right: 0;
-        left: 0;
-        bottom: -100%;
-        background-color:rgba(160, 81, 45, 0.692) ;
-       
-        transition: bottom 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
-       
-    }
-    
 }
-.btn-custom-1:hover .overlay{
-    bottom : 0 ; 
+.py-10{
+    padding: 12rem 0;
 }
-
+.max-width-1{
+    max-width: 768px;
+    margin:auto;
+}
 #cf_header {
     position: relative;
     height: 100vh;
@@ -97,40 +54,63 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
 
-#small_screen_navbar {
-    position: fixed;
-    width: 250px;
-    height: 100vh;
-    top: 0;
-    bottom: 0;
-    left: -250px;
-    background-color: antiquewhite;
-    transition: all 800ms cubic-bezier(0.23, 1, 0.320, 1);
+    .fixed-top {
+        background-color: rgba(73, 45, 19, 0.459);
+        .brand img {
+            width: 80px;
+        }
+        
+    }
 
-    #navbar_footer {
+    .darker-overlay {
+        content: "";
+        background-color: rgba(0, 0, 0, 0.596);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
 
-        img {
-            width: 150px;
+    }
+
+    #small_screen_navbar {
+        position: fixed;
+        width: 250px;
+        height: 100vh;
+        top: 0;
+        bottom: 0;
+        left: -250px;
+        background-color: antiquewhite;
+        transition: all 800ms cubic-bezier(0.23, 1, 0.320, 1);
+
+        #navbar_footer {
+
+            img {
+                width: 150px;
+            }
         }
     }
-}
 
+}
 #our_story_section {
     @include margin(4rem, 0);
 }
-
 #enjoyable_space {
     .darker-overlay {
         background: url("../img/backtwo.jpg");
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        top : 0;
+        left : 0 ; 
 
     }
 
-    background-color: rgba(0, 0, 0, 0.596);
+    background-color: rgba(0, 0, 0, 0.562);
     position: relative;
     padding:8rem 0;
     color: antiquewhite;
@@ -143,3 +123,46 @@ body {
         max-width: 888px !important;
     }
 }
+#menu_section{
+    .btn-custom-1 {
+
+        border-bottom: 3px solid rgba(160, 81, 45, 0.692);
+    
+        .overlay {
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+            right: 0;
+            left: 0;
+            bottom: -100%;
+            background-color: rgba(160, 81, 45, 0.692);
+    
+            transition: bottom 300ms cubic-bezier(0.55, 0.085, 0.68, 0.53);
+    
+        }
+    
+    }
+    
+    .btn-custom-1:hover .overlay {
+        bottom: 0;
+    }
+}
+#hot_section{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.603);
+    padding : 8rem 0 ; 
+    .overlay{
+        position: absolute;
+        width : 100%;
+        height: 100%;
+        top : 0;
+        left : 0 ;
+        background: url("../img/hot.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        z-index: -1;
+    }
+}
+
